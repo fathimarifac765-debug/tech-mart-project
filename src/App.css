@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #111827;
+}
+
+.hero-banner {
+  margin: 25px auto;
+  max-width: 1350px;
+  min-height: 330px;
+  padding: 45px 65px;
+  border-radius: 18px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: linear-gradient(
+    110deg,
+    #dceaff,
+    #edf4ff,
+    #d6e7ff
+  );
+
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 560px;
+}
+
+.hero-small-text {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.hero-content h1 {
+  margin: 0;
+  font-size: 52px;
+  line-height: 1.05;
+  color: #102a43;
+}
+
+.hero-content p {
+  margin: 20px 0;
+  max-width: 500px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #52606d;
+}
+
+.shop-btn {
+  border: none;
+  padding: 13px 25px;
+  border-radius: 7px;
+
+  background: #1677e8;
+  color: white;
+
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.shop-btn:hover {
+  background: #0d5fc2;
+}
+
+.hero-products {
+  width: 520px;
+  height: 260px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+
+  position: relative;
+}
+
+.product-circle {
+  width: 115px;
+  height: 115px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: white;
+
+  font-size: 65px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.phone {
+  transform: translateY(-25px);
+}
+
+.watch {
+  transform: translateY(25px);
+}
+
+.headphone {
+  transform: translateY(-15px);
+}
+
+.buds {
+  transform: translateY(35px);
+}
+
+@media (max-width: 900px) {
+  .hero-banner {
+    padding: 35px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+  }
+
+  .hero-products {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-banner {
+    margin: 15px;
+    padding: 30px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 34px;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+
+  .hero-products {
+    transform: scale(0.75);
+    width: 130%;
+  }
+}

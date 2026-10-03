@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { clearCart } from "../redux/cartSlice";
+import axios from "axios";
 
 function PaymentPage(){
     const navigate = useNavigate();
@@ -39,7 +40,7 @@ function PaymentPage(){
        const deliveryDate = new Date();
        deliveryDate.setDate(deliveryDate.getDate()+5)
 
-       const saveOrder = (paymentMethod)=>{
+       const saveOrder =  async (paymentMethod)=>{
         const orderData ={
             orderId :"TM" + Date.now(),
             customerName:checkoutData.fullName,
@@ -52,6 +53,10 @@ function PaymentPage(){
             orderDate:new Date().toLocaleDateString(),
             estimatedDelivery:deliveryDate.toLocaleDateString(),
         }
+        await axios.post(
+            "http://localhost:3000/orders",
+            orderData
+        );
        const existingOrders =
           JSON.parse(localStorage.getItem("orders")) || [];
 
@@ -248,8 +253,8 @@ function PaymentPage(){
     online payment options are recommended.
   </div>
    <button 
-   onClick={()=>{
-    saveOrder("Cash On Delivery");
+   onClick={async()=>{
+      await saveOrder("Cash On Delivery");
     localStorage.removeItem("buyNowProduct");
     dispatch(clearCart());
     navigate("/order-success")

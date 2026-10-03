@@ -72,6 +72,10 @@ function Navbar({
           alignItems: "center",
           gap: "30px",
           borderBottom: "1px solid #e5e7eb",
+
+          position:"sticky",
+          top:0,
+          zIndex:1000
         }}
       >
         {/* Logo */}

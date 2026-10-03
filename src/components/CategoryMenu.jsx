@@ -22,7 +22,7 @@ function CategoryMenu({
       style={{
         backgroundColor: "#ffffff",
         padding: "15px 30px",
-        borderBottom: "1px solid #e5e7eb",
+        borderBottom: "1px solid #e5e7eb",  
       }}
     >
       <div

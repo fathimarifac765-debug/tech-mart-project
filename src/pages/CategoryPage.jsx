@@ -20,7 +20,10 @@ function CategoryPage(){
         })
     },[]);
 
-    const filteredProducts = products.filter(
+    const filteredProducts = 
+        categoryName.toLowerCase() === "all"
+        ?products
+       : products.filter(
         (product)=>
             product.category.toLowerCase()===
            categoryName.toLowerCase()

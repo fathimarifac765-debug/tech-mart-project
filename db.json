@@ -1,18 +1,25 @@
 {
+  "admins": [
+    {
+      "id": "1",
+      "email": "techmartadmin@gmail.com",
+      "password": "techmart123"
+    }
+  ],
   "products": [
     {
       "id": "1",
       "name": "iphone 17",
+      "category": "Mobiles",
       "price": 89900,
       "oldPrice": 99900,
-      "discount": "11% OFF",
       "brand": "Apple",
-      "category": "Mobiles",
       "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
       "rating": 4.8,
       "reviews": "12.4k",
-      "stock": 25,
-      "description": "Apple iPhone 17 with A19 chip, 48MP camera system, Super Retina XDR display and all-day battery life."
+      "stock": 1,
+      "description": "Apple iPhone 17 with A19 chip, 48MP camera system, Super Retina XDR display and all-day battery life.",
+      "discount": "10% OFF"
     },
     {
       "id": "2",
@@ -53,7 +60,7 @@
       "image": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434",
       "rating": 4.8,
       "reviews": "15.4k",
-      "stock": 35,
+      "stock": 0,
       "description": "Apple AirPods Pro with active noise cancellation."
     },
     {
@@ -64,7 +71,7 @@
       "discount": "10% OFF",
       "brand": "Apple",
       "category": "Smart Watches",
-     "image": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d",
+      "image": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d",
       "rating": 4.7,
       "reviews": "7.8k",
       "stock": 12,
@@ -123,152 +130,537 @@
       "image": "https://images.unsplash.com/photo-1583863788434-e58a36330cf0",
       "rating": 4.5,
       "reviews": "2.1k",
-      "stock": 40,
+      "stock": 0,
       "description": "Fast charging USB-C adapter."
-    },{
-  "id": "10",
-  "name": "MacBook Air M4",
-  "price": 130999,
-  "oldPrice": 149999,
-  "discount": "9% OFF",
-  "brand": "Apple",
-  "category": "Laptops",
- "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=800&auto=format&fit=crop",
-  "rating": 4.9,
-  "reviews": "8.2k",
-  "stock": 12,
-  "description": "Apple MacBook Air with M4 chip."
-},{
-  "id": "11",
-  "name": "HP Pavilion 15",
-  "price": 68999,
-  "oldPrice": 74999,
-  "discount": "8% OFF",
-  "brand": "HP",
-  "category": "Laptops",
-  "image": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2",
-  "rating": 4.6,
-  "reviews": "3.5k",
-  "stock": 10,
-  "description": "HP Pavilion laptop."
-},{
-  "id": "12",
-  "name": "JBL Tune 770NC",
-  "price": 8999,
-  "oldPrice": 10999,
-  "discount": "18% OFF",
-  "brand": "JBL",
-  "category": "Headphones",
- "image": "https://images.unsplash.com/photo-1484704849700-f032a568e944",
-  "rating": 4.5,
-  "reviews": "2.8k",
-  "stock": 18,
-  "description": "Wireless JBL headphones."
-},{
-  "id": "13",
-  "name": "Boat Rockerz 550",
-  "price": 2499,
-  "oldPrice": 3499,
-  "discount": "28% OFF",
-  "brand": "Boat",
-  "category": "Headphones",
-  "image": "https://images.unsplash.com/photo-1487215078519-e21cc028cb29",
-  "rating": 4.3,
-  "reviews": "5.1k",
-  "stock": 30,
-  "description": "Boat wireless headphones."
-},{
-  "id": "14",
-  "name": "Samsung Galaxy Tab S10",
-  "price": 54999,
-  "oldPrice": 59999,
-  "discount": "8% OFF",
-  "brand": "Samsung",
-  "category": "Tablets",
-"image": "https://images.unsplash.com/photo-1585790050230-5dd28404ccb9",
-  "rating": 4.7,
-  "reviews": "2.4k",
-  "stock": 9,
-  "description": "Samsung premium tablet."
-},{
-  "id": "15",
-  "name": "Lenovo Tab Plus",
-  "price": 24999,
-  "oldPrice": 27999,
-  "discount": "10% OFF",
-  "brand": "Lenovo",
-  "category": "Tablets",
-"image": "https://images.unsplash.com/photo-1561154464-82e9adf32764",
-  "rating": 4.4,
-  "reviews": "1.8k",
-  "stock": 15,
-  "description": "Lenovo entertainment tablet."
-},{
-  "id": "16",
-  "name": "Samsung Galaxy Watch 8",
-  "price": 29999,
-  "oldPrice": 34999,
-  "discount": "14% OFF",
-  "brand": "Samsung",
-  "category": "Smart Watches",
-  "image": "https://images.unsplash.com/photo-1546868871-7041f2a55e12",
-  "rating": 4.6,
-  "reviews": "3.6k",
-  "stock": 14,
-  "description": "Samsung smartwatch."
-},{
-  "id": "17",
-  "name": "Noise ColorFit Ultra",
-  "price": 4999,
-  "oldPrice": 6999,
-  "discount": "29% OFF",
-  "brand": "Noise",
-  "category": "Smart Watches",
-  "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
-  "rating": 4.3,
-  "reviews": "6.5k",
-  "stock": 25,
-  "description": "Budget smartwatch."
-}
+    },
+    {
+      "id": "10",
+      "name": "MacBook Air M4",
+      "price": 130999,
+      "oldPrice": 149999,
+      "discount": "9% OFF",
+      "brand": "Apple",
+      "category": "Laptops",
+      "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=800&auto=format&fit=crop",
+      "rating": 4.9,
+      "reviews": "8.2k",
+      "stock": 12,
+      "description": "Apple MacBook Air with M4 chip."
+    },
+    {
+      "id": "11",
+      "name": "HP Pavilion 15",
+      "price": 68999,
+      "oldPrice": 74999,
+      "discount": "8% OFF",
+      "brand": "HP",
+      "category": "Laptops",
+      "image": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2",
+      "rating": 4.6,
+      "reviews": "3.5k",
+      "stock": 10,
+      "description": "HP Pavilion laptop."
+    },
+    {
+      "id": "12",
+      "name": "JBL Tune 770NC",
+      "price": 8999,
+      "oldPrice": 10999,
+      "discount": "18% OFF",
+      "brand": "JBL",
+      "category": "Headphones",
+      "image": "https://images.unsplash.com/photo-1484704849700-f032a568e944",
+      "rating": 4.5,
+      "reviews": "2.8k",
+      "stock": 18,
+      "description": "Wireless JBL headphones."
+    },
+    {
+      "id": "13",
+      "name": "Boat Rockerz 550",
+      "price": 2499,
+      "oldPrice": 3499,
+      "discount": "28% OFF",
+      "brand": "Boat",
+      "category": "Headphones",
+      "image": "https://images.unsplash.com/photo-1487215078519-e21cc028cb29",
+      "rating": 4.3,
+      "reviews": "5.1k",
+      "stock": 30,
+      "description": "Boat wireless headphones."
+    },
+    {
+      "id": "14",
+      "name": "Samsung Galaxy Tab S10",
+      "price": 54999,
+      "oldPrice": 59999,
+      "discount": "8% OFF",
+      "brand": "Samsung",
+      "category": "Tablets",
+      "image": "https://images.unsplash.com/photo-1585790050230-5dd28404ccb9",
+      "rating": 4.7,
+      "reviews": "2.4k",
+      "stock": 9,
+      "description": "Samsung premium tablet."
+    },
+    {
+      "id": "15",
+      "name": "Lenovo Tab Plus",
+      "price": 24999,
+      "oldPrice": 27999,
+      "discount": "10% OFF",
+      "brand": "Lenovo",
+      "category": "Tablets",
+      "image": "https://images.unsplash.com/photo-1561154464-82e9adf32764",
+      "rating": 4.4,
+      "reviews": "1.8k",
+      "stock": 15,
+      "description": "Lenovo entertainment tablet."
+    },
+    {
+      "id": "16",
+      "name": "Samsung Galaxy Watch 8",
+      "price": 29999,
+      "oldPrice": 34999,
+      "discount": "14% OFF",
+      "brand": "Samsung",
+      "category": "Smart Watches",
+      "image": "https://images.unsplash.com/photo-1546868871-7041f2a55e12",
+      "rating": 4.6,
+      "reviews": "3.6k",
+      "stock": 14,
+      "description": "Samsung smartwatch."
+    },
+    {
+      "id": "17",
+      "name": "Noise ColorFit Ultra",
+      "price": 4999,
+      "oldPrice": 6999,
+      "discount": "29% OFF",
+      "brand": "Noise",
+      "category": "Smart Watches",
+      "image": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=500",
+      "rating": 4.3,
+      "reviews": "6.5k",
+      "stock": 25,
+      "description": "Budget smartwatch."
+    },
+    {
+      "id": "18",
+      "name": "Sony SRS-XB100",
+      "category": "Speaker",
+      "price": 5499,
+      "oldPrice": 6999,
+      "brand": "Sony",
+      "image": "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=500",
+      "rating": 4.6,
+      "reviews": "850 Reviews",
+      "stock": 10,
+      "description": "Portable Bluetooth Speaker",
+      "discount": "21% OFF"
+    },
+    {
+      "id": "19",
+      "name": "JBL Go 4",
+      "category": "Speaker",
+      "price": 3999,
+      "oldPrice": 5999,
+      "brand": "boAt",
+      "image": "https://images.unsplash.com/photo-1589003077984-894e133dabab?w=800",
+      "rating": 4.4,
+      "reviews": "1200 Reviews",
+      "stock": 18,
+      "description": "Wireless Outdoor Speaker",
+      "discount": "33% OFF"
+    },
+    {
+      "id": "20",
+      "name": "Marshall Emberton II",
+      "category": "Speaker",
+      "price": 14999,
+      "oldPrice": 17999,
+      "brand": "Marshall",
+      "image": "data:image/jpeg;base64,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",
+      "rating": 4.8,
+      "reviews": "540 Reviews",
+      "stock": 6,
+      "description": "Premium Portable Speaker",
+      "discount": "17% OFF"
+    }
   ],
   "users": [
     {
-      "name": "fathima rifa",
+      "id": "1",
+      "name": "Ajmal",
+      "email": "ajmal@gmail.com",
+      "password": "ajmal123",
+      "role": "customer",
+      "status": "block"
+    },
+    {
+      "id": "2",
+      "name": "Rayyan",
+      "email": "rayyan@gmail.com",
+      "password": "rayyan123",
+      "role": "customer",
+      "status": "block"
+    },
+    {
+      "id": "3",
+      "name": "Rana",
+      "email": "rana@gmail.com",
+      "password": "rana123",
+      "role": "customer",
+      "status": "unblock"
+    },
+    {
+      "id": "4",
+      "name": "Mehza",
+      "email": "mehza@gmail.com",
+      "password": "mehza123",
+      "role": "customer",
+      "status": "unblock"
+    },
+    {
+      "id": "5",
+      "name": "Nazal",
+      "email": "nazal@gmail.com",
+      "password": "nazal123",
+      "role": "customer",
+      "status": "block"
+    },
+    {
+      "id": "6",
+      "name": "Khalid",
+      "email": "khalid@gmail.com",
+      "password": "khalid123",
+      "role": "customer",
+      "status": "unblock"
+    },
+    {
+      "id": "7",
+      "name": "Fathima Rifa",
       "email": "fathimarifa@gmail.com",
-      "password": "234567",
-      "id": "pMBP-j7IHZQ"
+      "password": "rifa123",
+      "role": "customer",
+      "status": "unblock"
     },
     {
-      "name": "nazaaa",
-      "email": "naza@gmail.com",
-      "password": "871486",
-      "id": "JkGYsuNifjI"
+      "id": "8",
+      "name": "Amna",
+      "email": "amna@gmail.com",
+      "password": "amna123",
+      "role": "customer",
+      "status": "unblock"
     },
     {
-      "name": "fabiiii",
-      "email": "fabi@gmail.co",
-      "password": "974786",
-      "id": "A9pBRm8oztE"
+      "id": "9",
+      "name": "Rida",
+      "email": "rida@gmail.com",
+      "password": "rida123",
+      "role": "customer",
+      "status": "unblock"
     },
     {
-      "name": "fabii",
-      "email": "fabi@gmail.com",
-      "password": "974786",
-      "id": "ooFsvoZHUEg"
-    },
-    {
-      "name": "khalid",
-      "email": "muthu@gmail.com",
-      "password": "703470",
-      "id": "ZGolVJYnt4s"
-    },
-    {
-      "name": "fathima",
-      "email": "fathima@gmail.com",
-      "password": "abcdefg",
-      "id": "UvGTz9r28QQ"
+      "id": "10",
+      "name": "Hasnath",
+      "email": "hasnath@gmail.com",
+      "password": "hasnath123",
+      "role": "customer",
+      "status": "unblock"
     }
   ],
-  "orders": [],
+  "orders": [
+    {
+      "orderId": "TM1001",
+      "customerName": "Ajmal",
+      "address": "Malappuram",
+      "phone": "9876543210",
+      "items": [
+        {
+          "id": "1",
+          "name": "iPhone 15",
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 79999,
+      "paymentMethod": "UPI",
+      "status": "Shipped",
+      "orderDate": "2026-09-21",
+      "estimatedDelivery": "2026-09-25",
+      "id": "RRSRjy90SJ4"
+    },
+    {
+      "orderId": "TM1002",
+      "customerName": "Rayyan",
+      "address": "Kozhikode",
+      "phone": "9876543211",
+      "items": [
+        {
+          "id": "2",
+          "name": "Samsung S24",
+          "quantity": 2
+        }
+      ],
+      "totalAmount": 129998,
+      "paymentMethod": "Cash on Delivery",
+      "status": "Delivered",
+      "orderDate": "2026-09-22",
+      "estimatedDelivery": "2026-09-26",
+      "id": "jfQhMN94JMc"
+    },
+    {
+      "orderId": "TM1003",
+      "customerName": "Rana",
+      "address": "Kannur",
+      "phone": "9876543212",
+      "items": [
+        {
+          "id": "3",
+          "name": "Apple Watch",
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 34999,
+      "paymentMethod": "Card",
+      "status": "Delivered",
+      "orderDate": "2026-09-23",
+      "estimatedDelivery": "2026-09-27",
+      "id": "FQjEiGArWvI"
+    },
+    {
+      "orderId": "TM1004",
+      "customerName": "Mehza",
+      "address": "Thrissur",
+      "phone": "9876543213",
+      "items": [
+        {
+          "id": "4",
+          "name": "AirPods Pro",
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 19999,
+      "paymentMethod": "UPI",
+      "status": "Cancelled",
+      "orderDate": "2026-09-24",
+      "estimatedDelivery": "2026-09-28",
+      "id": "8YMptfdPPkk"
+    },
+    {
+      "orderId": "TM1005",
+      "customerName": "Nazal",
+      "address": "Kochi",
+      "phone": "9876543214",
+      "items": [
+        {
+          "id": "5",
+          "name": "iPad Air",
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 54999,
+      "paymentMethod": "Cash on Delivery",
+      "status": "Delivered",
+      "orderDate": "2026-09-25",
+      "estimatedDelivery": "2026-09-29",
+      "id": "c838MGlqmNE"
+    },
+    {
+      "orderId": "TM1006",
+      "customerName": "Khalid",
+      "address": "Palakkad",
+      "phone": "9876543215",
+      "items": [
+        {
+          "id": "6",
+          "name": "MacBook Air",
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 99999,
+      "paymentMethod": "Card",
+      "status": "Pending",
+      "orderDate": "2026-09-27",
+      "estimatedDelivery": "2026-10-02",
+      "id": "Ct6OPGwdGVI"
+    },
+    {
+      "orderId": "TM1007",
+      "customerName": "Fathima Rifa",
+      "address": "Kodakkad",
+      "phone": "9876543216",
+      "items": [
+        {
+          "id": "7",
+          "name": "OnePlus 13",
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 45999,
+      "paymentMethod": "UPI",
+      "status": "Shipped",
+      "orderDate": "2026-09-27",
+      "estimatedDelivery": "2026-10-01",
+      "id": "Dn5UKFYFXqo"
+    },
+    {
+      "orderId": "TM1008",
+      "customerName": "Amna",
+      "address": "Tirur",
+      "phone": "9876543217",
+      "items": [
+        {
+          "id": "8",
+          "name": "Boat Headphones",
+          "quantity": 2
+        }
+      ],
+      "totalAmount": 5998,
+      "paymentMethod": "Cash on Delivery",
+      "status": "Shipped",
+      "orderDate": "2026-09-28",
+      "estimatedDelivery": "2026-10-02",
+      "id": "jN9AiYFJwl8"
+    },
+    {
+      "orderId": "TM1009",
+      "customerName": "Rida",
+      "address": "Chemmad",
+      "phone": "9876543218",
+      "items": [
+        {
+          "id": "9",
+          "name": "Samsung Tablet",
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 28999,
+      "paymentMethod": "Card",
+      "status": "Pending",
+      "orderDate": "2026-09-29",
+      "estimatedDelivery": "2026-10-03",
+      "id": "c-CbXS1V9t8"
+    },
+    {
+      "orderId": "TM1010",
+      "customerName": "Hasnath",
+      "address": "Parappanangadi",
+      "phone": "9876543219",
+      "items": [
+        {
+          "id": "10",
+          "name": "JBL Speaker",
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 8999,
+      "paymentMethod": "UPI",
+      "status": "Cancelled",
+      "orderDate": "2026-09-30",
+      "estimatedDelivery": "2026-10-04",
+      "id": "SA4-hdYDLFU"
+    },
+    {
+      "orderId": "TM1790696988235",
+      "customerName": "Ajmal",
+      "address": "Kozhikode",
+      "phone": "9876543210",
+      "items": [
+        {
+          "id": "2",
+          "name": "Samsung Galaxy S24",
+          "price": 74999,
+          "quantity": 1
+        }
+      ],
+      "total": 74999,
+      "paymentMethod": "UPI",
+      "status": "Confirmed",
+      "orderDate": "2026-09-26",
+      "estimatedDelivery": "2026-09-30",
+      "id": "JUeZHXFL8vE"
+    },
+    {
+      "orderId": "TM1790696988236",
+      "customerName": "Rayyan",
+      "address": "Malappuram",
+      "phone": "9876543211",
+      "items": [
+        {
+          "id": "3",
+          "name": "Apple iPhone 15",
+          "price": 79999,
+          "quantity": 1
+        }
+      ],
+      "total": 79999,
+      "paymentMethod": "Cash On Delivery",
+      "status": "Pending",
+      "orderDate": "2026-09-27",
+      "estimatedDelivery": "2026-10-01",
+      "id": "Tpn-7I2G8w8"
+    },
+    {
+      "orderId": "TM1790696988237",
+      "customerName": "Rana",
+      "address": "Tirur",
+      "phone": "9876543212",
+      "items": [
+        {
+          "id": "5",
+          "name": "Boat Headphones",
+          "price": 2999,
+          "quantity": 2
+        }
+      ],
+      "total": 5998,
+      "paymentMethod": "UPI",
+      "status": "Delivered",
+      "orderDate": "2026-09-28",
+      "estimatedDelivery": "2026-10-02",
+      "id": "El5ra9CRfSw"
+    },
+    {
+      "orderId": "TM1790696988238",
+      "customerName": "Fathima Rifa",
+      "address": "Kodakkad",
+      "phone": "9876543213",
+      "items": [
+        {
+          "id": "8",
+          "name": "Smart Watch",
+          "price": 4999,
+          "quantity": 1
+        }
+      ],
+      "total": 4999,
+      "paymentMethod": "Cash On Delivery",
+      "status": "Shipped",
+      "orderDate": "2026-09-29",
+      "estimatedDelivery": "2026-10-03",
+      "id": "K3OaeXwWX3w"
+    },
+    {
+      "orderId": "TM1790696988239",
+      "customerName": "Khalid",
+      "address": "Parappanangadi",
+      "phone": "9876543214",
+      "items": [
+        {
+          "id": "10",
+          "name": "Bluetooth Speaker",
+          "price": 3499,
+          "quantity": 1
+        }
+      ],
+      "total": 3499,
+      "paymentMethod": "UPI",
+      "status": "Cancelled",
+      "orderDate": "2026-09-30",
+      "estimatedDelivery": "2026-10-04",
+      "id": "ZaATawubhfg"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }

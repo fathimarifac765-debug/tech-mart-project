@@ -24,6 +24,11 @@ const handleLogin = () => {
             u.email ===email &&
             u.password ===password
         );
+
+        if (user && user.status === "block") {
+         setError("Your account has been blocked by Admin");
+         return;
+          }
         if(user){
             localStorage.setItem(
                 "user",
